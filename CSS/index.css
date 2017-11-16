@@ -145,11 +145,17 @@ header {
     font-size: 8px
 }
 
-nav 
+.stack {
+    font-family: sans-serif;
+    display: inline-block;
+    word-wrap: break-word;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.15);
+    vertical-align: top;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
     
     
-}
 
-nav {
-    
 }
