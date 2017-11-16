@@ -21,14 +21,38 @@
         <a class="main-nav" href="bio.html">About</a>
     </nav>
     <hr>
-    <h2>Contact Us</h2>
-    <div class="contact-form">
+    <div>
         <form method="get">
-            <label>First Name: <input type="text" name="first name" id="fname"></label><br>
-            <label>Last Name: <input type="text" name="last name" id="lname"></label><br>
-            <label>Email: <input type="text" name="email" id="email"></label><br><br>
-            <label for="comments" style="float: left">Comments:</label><br><textarea name="comments" id="comments" rows="4" cols="40"></textarea><br>
-            <input type="submit" value="Contact"> <input type="reset">
+            <div class="contact-form">
+                <h2>Contact Us</h2><label>First Name: <input type="text" style="color: black" name="first name" id="fname"></label><br>
+                <label>Last Name: <input type="text" style="color: black" name="last name" id="lname"></label><br>
+                <label>Email: <input type="text" style="color: black" name="email" id="email"></label><br><br>
+                <label for="comments" style="float: left">Comments:</label><textarea name="comments" id="comments" style="color: black" rows="4" cols="40"></textarea><br>
+                <input type="submit" style="color: black" value="Contact"> <input type="reset" style="color: black">
+            </div>
+            <div class="contact-form">
+                <h2>Sign up for our mailing list</h2>
+                <label for="myEmail">Email:</label>
+                <input type="email" style="color: black" name="myEmail"><br>
+                <label for="myPassword">Password:</label>
+                <input type="password" name="myPassword"><br><br> Get notifications for:<br>
+                <input type="checkbox" name="newvideos" value="NewVideos"> New Videos <br>
+                <input type="checkbox" name="newmusic" value="NewMusic"> New Music <br>
+                <input type="checkbox" name="upcomingshows" value="UpcomingShows"> Upcoming Shows
+                <br>
+                <input type="submit" style="color: black" value="Sign Up">
+            </div>
+            <div class="contact-form">
+                <h2>Monthly Poll</h2>
+                <h4><u>Who has the best dance moves?</u></h4>
+                <input type="radio" name="vote" value="Ryan"> Ryan <br> 
+                <input type="radio" name="vote" value="Jenna"> Jenna <br> 
+                <input type="radio" name="vote" value="Aaron"> Aaron <br> 
+                <input type="radio" name="vote" value="Karis"> Karis <br>
+                <input type="radio" name="vote" value="Jackson"> Jackson <br> 
+                <input type="submit" style="color: black" value="Vote">
+                
+            </div>
         </form>
     </div>
 </body>  
