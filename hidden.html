@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="CSS/complex.css">1
+</head>
+<a style="float: left" href="vendettahomepage.html"><img src="/img/VendettaLogo().png" alt="Vendetta Logo" style="width:100px;height:100px;"></a>
+<body bgcolor=0><canvas id=c height=480><script>R=Math.random
+C=c.getContext('2d');f=C.fillRect.bind(C)   
+S=[l=G=I=J=K=L=0,0];r=17;u=463;o=24;q=12;z=10;s=640;v=36
+function T(z,t,u,v){P=0;if(e=v*E-u*F){a=(u*t-v*z)/e;b=(E*t-F*z)/e
+a<0|a>1|b<0|b>1?0:P={x:M+a*E,y:N+a*F,d:u,s:0,X:X,Y:Y}}}function
+i(p,q,h){T(p-22*(E<0),q,0,h)
+P?0:T(p,q-h*(F<0),22,0)}function
+U(p){if(p.a)if(M<p.x&X<0|M>p.x+q&X>0)p.u=0
+else{P=p.P;if(P&&P.X*X>0&P.Y*Y>0&P.s<p.l/z)P.s+=t
+else{E=X*z;F=Y*z;i(M-p.x+5,s*q,s*o)
+if(p.P=P){y=P.y;while(y<r|y>u)y=y<r?34-y:y>u?u+u-y:y
+P.y=y+R(e=(p.l+2)*(X<0?M-p.x-q:p.x-M)/64)*2*e-e}}P?p.u=P.y<p.y+25?1:P.y>p.y+35?-1:0:0}y=p.y-p.u*t*198
+p.y=y<q?q:y>408?408:y}function
+W(n,x){a=9.6;b=[~8,3,62,31,75,93,~2,7,-1,u][n]
+b&4&&f(x,o,v,a);b&64&&f(x,o,a,o)
+b&2&&f(x+v,o,-a,o);b&8&&f(x,43.2,v,a)
+b&32&&f(x,48,a,o);b&1&&f(x+v,48,-a,o)
+b&16&&f(x,72,v,-a)}A={u:0,x:0,y:210};B={u:0,x:628,y:210}
+function g(n){if(++S[n]>8)G=A.a=B.a=0
+else{N=R(M=n?635:5)*446+r;Y=157.5;X=n?-Y:Y
+A.l=z+S[0]-S[1];B.l=20-A.l}}D=document
+D.onkeydown=D.onkeyup=function(e){d=!!e.type[5]
+k=e.keyCode-45;if(k>2&k<6&d&!G){G=S=[-1,0];A.a=k<4;B.a=k<5
+g(0)}k^31?k^35?k^20?k^v?0:I=d:J=d:K=d:L=d
+A.a?0:A.u=I-J;B.a?0:B.u=K-L}
+setInterval(function(){t=new Date()/1000-l;l+=t;U(A);U(B)
+if(G){E=t*X+4*t*t;F=t*Y+4*t*t
+x=M+E;y=N+F;m=X+t*(X>0?8:-8);n=Y+t*(Y>0?8:-8)
+if(n>0&y>u){y=u;n=-n}if(n<0&y<r){y=r;n=-n}p=m<0?A:B
+i(M-p.x+5,N-p.y+5,70)
+if(P){if(P.d){y=P.y;n=-n}else{x=P.x;m=-m}n*=n*p.u<0?.5:p.u?1.5:1}M=x;N=y
+X=m;Y=n;M>645?g(0):M<-5&&g(1)}c.width=s;C.fillStyle='#ff0000'
+f(0,0,s,q);f(0,468,s,q);for(j=o;j--;)f(314,6+o*j,q,q)
+W(S[0],266.5);W(S[1],338.5)
+                       f(0,A.y,q,60);f(s,B.y,-q,60);G&&f(M-5,N-5,z,z)},50/3)</script></canvas>
+    
+    <h1 style="color: white;"> Select amount of players to start</h1>
+    <h3 style="color: white;">Player 1 controls - Q / A</h3>
+    <h3 style="color: white;">Player 2 controls - P / L</h3></body>
+    
+
+</html>
