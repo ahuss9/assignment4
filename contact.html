@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/complex.css">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/contact.css">
     <link rel="icon" type="image/png" href=img/VendettaLogoBlack.png>
 </head>
@@ -15,7 +14,7 @@
 
     <hr>
     <nav>
-        <a class="main-nav" href="vendettahomepage.html">Home</a>
+        <a class="main-nav" href="index.html">Home</a>
         <a class="main-nav" href="music.html">Music</a>
         <a class="main-nav" href="videos.html">Videos</a>
         <a class="main-nav" href="bio.html">About</a>
@@ -51,6 +50,35 @@
                 <p class="percent" style="width: 40px; text-align-last: right">5%</p> <input type="radio" name="vote" value="Karis"> Karis <br>
                 <p class="percent" style="width: 50px; text-align-last: right">17%</p> <input type="radio" name="vote" value="Jackson"> Jackson <br>
                 <input type="submit" style="color: black" value="Vote">
+            </div>
+        </form>
+        <form style="width: 50%; margin: auto;">
+            <div>
+                <table>
+                    <tr>
+                        <th><label for="firstname">First Name: </label></th>
+                        <td><input class="input" type="text" name="firstname" id="firstname"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="lastname">Last Name: </label></th>
+                        <td><input class="input" type="text" name="lastname" id="lastname"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="email">E-mail: </label></th>
+                        <td><input class="input" type="text" name="email" id="email"></td>
+                    </tr>
+                    <tr>
+                        <th><label for="comments">Comments:</label></th>
+                        <td><textarea name="comments" id="comments" rows="4" cols="40"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input class="input" type="submit" id="submit" value="Submit">
+                            <input class="input" type="reset" id="reset" value="Reset">
+                        </td>
+                    </tr>
+                </table>
             </div>
         </form>
     </div>
