@@ -20,67 +20,75 @@
         <a class="main-nav" href="bio.html">About</a>
     </nav>
     <hr>
+    <div class="contact-form">
+        <h2>Sign up for our mailing list</h2>
+        <label for="myEmail">Email:</label>
+        <input type="email" style="color: black" name="myEmail"><br>
+        <label for="myPassword">Password:</label>
+        <input type="password" style="color: black" name="myPassword"><br><br> Get notifications for:<br>
+        <input type="checkbox" name="newvideos" value="NewVideos"> New Videos <br>
+        <input type="checkbox" name="newmusic" value="NewMusic"> New Music <br>
+        <input type="checkbox" name="upcomingshows" value="UpcomingShows"> Upcoming Shows
+        <br>
+        <input type="submit" style="color: black" value="Sign Up">
+    </div>
+    <div class="contact-form">
+        <h2>Monthly Poll</h2>
+        <h3 style="font-family: sans-serif"><u>Who has the best dance moves?</u></h3>
+        <p class="percent" style="width: 30px;">3%</p> <input type="radio" name="vote" style="margin: 0 18px 0 0" value="Ryan"> Ryan <br>
+        <p class="percent" style="width: 100px; text-align-last: right">30%</p> <input type="radio" name="vote" style="margin: 0 15px 0 0" value="Jenna"> Jenna <br>
+        <p class="percent" style="width: 150px; text-align-last: right">45%</p> <input type="radio" name="vote" style="margin: 0 11px 0 0" value="Aaron"> Aaron <br>
+        <p class="percent" style="width: 40px; text-align-last: right">5%</p> <input type="radio" name="vote" style="margin: 0 17px 0 0" value="Karis"> Karis <br>
+        <p class="percent" style="width: 50px; text-align-last: right">17%</p> <input type="radio" name="vote" style="margin: 0 1px 0 0" value="Jackson"> Jackson <br>
+        <input type="submit" style="color: black" value="Vote">
+        <!-- a better way to do this would be a table but I already had it done before we learned how to make them. Change later.-->
+    </div>
     <div>
         <form method="get">
             <div class="contact-form">
-                <h2>Contact Us</h2><label>First Name: <input type="text" style="color: black" name="first name" id="fname"></label><br>
-                <label>Last Name: <input type="text" style="color: black" name="last name" id="lname"></label><br>
-                <label>Email: <input type="text" style="color: black" name="email" id="email"></label><br><br>
-                <label for="comments" style="float: left">Comments:</label><textarea name="comments" id="comments" style="color: black" rows="4" cols="40"></textarea><br>
-                <input type="submit" style="color: black" value="Contact"> <input type="reset" style="color: black">
+                <form style="width: 50%; border: none;">
+                    <div>
+                        <h2>Contact Us</h2>
+                        <table>
+                            <tr>
+                                <th><label for="firstname">First Name: </label></th>
+                                <td><input class="input" type="text" name="firstname" style="color: black" ; id="firstname"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="lastname">Last Name: </label></th>
+                                <td><input class="input" type="text" name="lastname" style="color: black" ; id="lastname"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="email">E-mail: </label></th>
+                                <td><input class="input" type="text" name="email" style="color: black" ; id="email"></td>
+                            </tr>
+                            <tr>
+                                <th><label for="comments">Comments:</label></th>
+                                <td><textarea name="comments" id="comments" style="color: black" ; rows="4" cols="40"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>
+                                    <input class="input" type="submit" style="color: black" ; id="submit" value="Submit">
+                                    <input class="input" type="reset" style="color: black" ; id="reset" value="Reset">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
             </div>
-            <div class="contact-form">
-                <h2>Sign up for our mailing list</h2>
-                <label for="myEmail">Email:</label>
-                <input type="email" style="color: black" name="myEmail"><br>
-                <label for="myPassword">Password:</label>
-                <input type="password" name="myPassword"><br><br> Get notifications for:<br>
-                <input type="checkbox" name="newvideos" value="NewVideos"> New Videos <br>
-                <input type="checkbox" name="newmusic" value="NewMusic"> New Music <br>
-                <input type="checkbox" name="upcomingshows" value="UpcomingShows"> Upcoming Shows
-                <br>
-                <input type="submit" style="color: black" value="Sign Up">
-            </div>
-            <div class="contact-form">
-                <h2>Monthly Poll</h2>
-                <h3 style="font-family: sans-serif"><u>Who has the best dance moves?</u></h3>
-                <p class="percent" style="width: 30px;">3%</p> <input type="radio" name="vote" value="Ryan"> Ryan <br>
-                <p class="percent" style="width: 100px; text-align-last: right">30%</p> <input type="radio" name="vote" value="Jenna"> Jenna <br>
-                <p class="percent" style="width: 150px; text-align-last: right">45%</p> <input type="radio" name="vote" value="Aaron"> Aaron <br>
-                <p class="percent" style="width: 40px; text-align-last: right">5%</p> <input type="radio" name="vote" value="Karis"> Karis <br>
-                <p class="percent" style="width: 50px; text-align-last: right">17%</p> <input type="radio" name="vote" value="Jackson"> Jackson <br>
-                <input type="submit" style="color: black" value="Vote">
-            </div>
+
         </form>
-        <form style="width: 50%; margin: auto;">
-            <div>
-                <table>
-                    <tr>
-                        <th><label for="firstname">First Name: </label></th>
-                        <td><input class="input" type="text" name="firstname" id="firstname"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="lastname">Last Name: </label></th>
-                        <td><input class="input" type="text" name="lastname" id="lastname"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="email">E-mail: </label></th>
-                        <td><input class="input" type="text" name="email" id="email"></td>
-                    </tr>
-                    <tr>
-                        <th><label for="comments">Comments:</label></th>
-                        <td><textarea name="comments" id="comments" rows="4" cols="40"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>
-                            <input class="input" type="submit" id="submit" value="Submit">
-                            <input class="input" type="reset" id="reset" value="Reset">
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </form>
+
     </div>
+    <br><br><br><br>
+    <footer class="footer">
+        <a href="https://www.facebook.com/thevendettaband">
+            <img src="/img/fb_icon.png" alt="Facebook Logo" class=social></a>
+        <a href="https://www.instagram.com/vendettaband">
+            <img src="/img/insta_white.png" alt="Instagram Logo" class=social></a>
+        <a href="https://www.youtube.com/channel/UCRuUi-wMaQkhrH7Wexhs6QA/videos">
+            <img src="/img/yt_icon.png" alt="YouTube Logo" class=social></a>
+    </footer>
 </body>  
 </html>
